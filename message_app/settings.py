@@ -84,10 +84,10 @@ WSGI_APPLICATION = "message_app.wsgi.app"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.getenv("PGDATABASE"), # "neondb",
-        "USER": os.getenv("PGUSER"), # "neondb_owner",
-        "PASSWORD": os.getenv("PGPASSWORD"), # "npg_LF2juDR8eZCG",
-        "HOST": os.getenv("PGHOST"), # "ep-billowing-bonus-ad8xw8am-pooler.c-2.us-east-1.aws.neon.tech",
+        "NAME": os.getenv("DATABASE"), # "neondb",
+        "USER": os.getenv("USER"), # "neondb_owner",
+        "PASSWORD": os.getenv("PASSWORD"), # "npg_LF2juDR8eZCG",
+        "HOST": os.getenv("HOST"), # "ep-billowing-bonus-ad8xw8am-pooler.c-2.us-east-1.aws.neon.tech",
         "PORT": "5432",
     }
 }
