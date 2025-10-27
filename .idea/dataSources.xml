@@ -22,5 +22,19 @@
       <jdbc-url>jdbc:postgresql://ep-shiny-dust-ad02dj4c-pooler.c-2.us-east-1.aws.neon.tech:5432/neondb</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="Redis-db-local" uuid="e6f77275-9db7-4e28-acad-3eaa0c2d21c6">
+      <driver-ref>redis</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>jdbc.RedisDriver</jdbc-driver>
+      <jdbc-url>jdbc:redis://localhost:6379/0</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="Redis-db-claw" uuid="77ee2305-b05a-4829-96c3-bdd40974dd7f">
+      <driver-ref>redis</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>jdbc.RedisDriver</jdbc-driver>
+      <jdbc-url>jdbc:redis://tcp.us-west-1.clawcloudrun.com:38756:6379/</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
